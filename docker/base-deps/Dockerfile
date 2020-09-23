@@ -1,6 +1,6 @@
 # The base-deps Docker image installs main libraries needed to run Ray
 
-FROM ubuntu:xenial
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 RUN apt-get update \
     && apt-get install -y \
         git \
